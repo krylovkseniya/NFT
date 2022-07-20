@@ -22,7 +22,7 @@ import { otfToTtf, ttfToWoff, fontsStyle } from "./gulp/tasks/fonts.js";
 import { spriteSvg } from "./gulp/tasks/spriteSvg.js";
 
 function watcher() {
-    gulp.watch(path.watch.files, copy);
+    gulp.watch(path.watch.favicon, copy);
     gulp.watch(path.watch.html, html);
     gulp.watch(path.watch.scss, scss);
     gulp.watch(path.watch.js, js);
