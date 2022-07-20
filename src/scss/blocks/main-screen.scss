@@ -1,0 +1,126 @@
+.main-screen {
+    min-height: 100vh;
+    padding: 270px 0 145px 0;
+    display: flex;
+    justify-content: space-between;
+    &__info {
+        max-width: 590px;
+        position: relative;
+        h1 {
+            &::before {
+                content: '';
+                position: absolute;
+                right: 20%;
+                top: 40%;
+                width: 250px;
+                height: 36px;
+                background: $gradient;
+                z-index: -1;
+            }
+        }
+    }
+    &__text {
+        font-family: 'DMSans', sans-serif;
+        font-size: 24px;
+        line-height: 31px;
+        letter-spacing: 0.016em;
+        margin: 55px 0;
+    }
+    &__button {
+        position: relative;
+        margin-left: 30px;
+        background: $main-bg;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -1px;
+            bottom: -1px;
+            left: -1px;
+            right: -1px;
+            background: $gradient;
+            border-radius: 8px;
+            z-index: -1;
+        }
+    }
+    &__img {
+        width: 412px;
+        height: 550px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width: 1200px) {
+    .title {
+        font-size: 70px;
+    }
+    .main-screen {
+        &__info {
+            max-width: 470px;
+        }
+        &__text {
+            font-size: 20px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .title {
+        font-size: 60px;
+    }
+    .main-screen {
+       flex-direction: column;
+       align-items: center;
+       padding: 130px 0 64px 0;
+       text-align: center;
+       &__img {
+           margin-top: 55px;
+           max-width: 434px;
+       }
+    }
+}
+
+@media (max-width: 575px) {
+    .title {
+        font-size: 36px;
+        line-height: 42px;
+        max-width: 262px;
+        margin: 0 auto;
+    }
+    .button {
+        min-width: 134px;
+        min-height: 46px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .main-screen {
+        padding-top: 133px;
+        padding-bottom: 480px;
+        &__info {
+            h1::before {
+                top: 37%;
+                width: 106px;
+                height: 13px;
+            }
+        }
+        &__text {
+            max-width: 262px;
+            margin: 20px auto;
+            font-size: 12px;
+            line-height: 16px;
+        }
+        &__button {
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+        &__img {
+            margin-top: 40px;
+            position: absolute;
+            top: 420px;
+            max-width: 100%;
+            height: 361px;
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+}

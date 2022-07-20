@@ -1,0 +1,120 @@
+doctype html
+html(lang="en")
+    include html/head
+    body 
+        include html/header 
+        main.page 
+            .container 
+                section.main-screen
+                    .main-screen__info 
+                        .bg
+                        h1.title Discover Rare Collections Of Art&nbsp;&&nbsp;NFT’s 
+                        p.main-screen__text Amet minim mollit non deserunt ullamco est&nbsp;sit aliqua dolor do amet sint.
+                        .main-screen__buttons 
+                            button.button Explore
+                            button.button.main-screen__button Create
+                    picture.main-screen__img
+                        source(media="(max-width:575px)" srcset="@img/first-screen-adap.png")
+                        img(src="@img/first-screen.png" alt="First art")
+                section.works(id="works")
+                    div.works__block
+                        div.works__img
+                            img(src="@img/works/work-1.png" alt="Art")
+                        div.works__info
+                            h2.title.works__title 1 ac of land mint price 3000 NFT’s  
+                            ol.list
+                                li 1 Acre of digital land that you will own
+                                li Walk around your land in the metaverse
+                                li Invite friends and resell your land on OpenSea
+                            button.button.works__button Connect Wallet
+                    div.works__block.works__block_column
+                        div.works__info
+                            h2.title.works__title 1 ac of land mint price 3000 NFT’s  
+                            ol.list.list_mb
+                                li 10 Acre of digital land 
+                                li Walk around your land in the metaverse
+                                li Build Mansion on your land
+                            button.button.works__button Connect Wallet
+                        div.works__img
+                            img(src="@img/works/work-2.png" alt="Art")
+                    div.works__gallery
+                        h2.title.works__title 1 Acre + 4000 Sq ft Of Land Metaverse House
+                        div.works__images
+                            img(src="@img/works/work-3.png" alt="Art")
+                            img.works__down(src="@img/works/work-4.png" alt="Art")
+                            img(src="@img/works/work-5.png" alt="Art")
+                    div.works__slider
+                        h3.subtitle Gallery
+                        .swiper 
+                            .swiper-wrapper 
+                                div.swiper-slide
+                                    img(src="@img/works/work-1.png" alt="Art")
+                                div.swiper-slide
+                                    img(src="@img/works/work-2.png" alt="Art")
+                                div.swiper-slide
+                                    img(src="@img/works/work-3.png" alt="Art")
+                                div.swiper-slide
+                                    img(src="@img/works/work-4.png" alt="Art")
+                                div.swiper-slide
+                                    img(src="@img/works/work-5.png" alt="Art")
+                            .swiper-button-prev
+                            .swiper-button-next
+                    div.container-min
+                        h3.subtitle 400 NFT's
+                        ol.list.list_margin
+                                li 1 Acre of land +4000 sq feet metaverse house
+                                li Walk around your house and land on the metaverse
+                                li Invite friends to your house and sell your house on OpenSea
+                        button.button.works__button.works__button_big Connect Wallet
+                    .works__block.works__block_pb
+                        div.works__info
+                            h2.title.works__title 1 acre + 4000 Square ft land metaverse house 
+                            ol.list.list_mb
+                                li 10 Acre of digital land 
+                                li Walk around your land in the metaverse
+                                li Build Mansion on your land
+                            button.button.works__button Connect Wallet
+                        div.works__img
+                            img(src="@img/works/work-6.png" alt="Art")
+                section.roadmap(id="roadmap")
+                    h3.subtitle Road map
+                    .roadmap__wrapper
+                        .roadmap__blocks
+                            ol.roadmap__block
+                                li.roadmap__list.roadmap__list_1 Build custom manage for mansion holders
+                                li.roadmap__list.roadmap__list_2 Launch our own crypto token for staking
+                            ol.roadmap__block.roadmap__block_mt
+                                li.roadmap__list.roadmap__list_3 Build custom manage for mansion holders
+                                li.roadmap__list.roadmap__list_4 Launch our own crypto token for staking
+                        .roadmap__blocks
+                            ol.roadmap__block
+                                li.roadmap__list.roadmap__list_5 Build custom manage for mansion holders
+                                li.roadmap__list.roadmap__list_6 Launch our own crypto token for staking
+                            ol.roadmap__block.roadmap__block_mt
+                                li.roadmap__list.roadmap__list_7 Build custom manage for mansion holders
+                                li.roadmap__list.roadmap__list_8 Launch our own crypto token for staking
+                section.game(id="news")
+                    h3.subtitle Mansion Battles Game
+                    div.game__block
+                        div.game__img
+                            img(src="@img/game.png" alt="Art")
+                        div.game__info
+                            h4.subtitle.game__subtitle *Coming Soon*  
+                            ol.list.game__list
+                                li 10 Acre of digital land 
+                                li Walk around your land in the metaverse
+                                li Build Mansion on your land
+                .modal
+                    .modal__overlay
+                    .modal__dialog
+                        .modal__close
+                        h3.modal__title Connect
+                        form.modal__form(action="#" method="POST")
+                            input.input.modal__input(name="name" type="text" placeholder="Your Full Name*" required minlength="2")
+                            input.input.modal__input.input__number(name="phone" type="tel" placeholder="Phone Number*" required minlength="11")
+                            input.input.modal__input(name="email" type="email" placeholder="Email*" required)
+                            textarea.message.modal__message(name="message" placeholder="Message" maxlength="150")
+                            button.button.modal__button(type="submit") Send
+        include html/footer 
+
+        script(src="js/app.min.js") 

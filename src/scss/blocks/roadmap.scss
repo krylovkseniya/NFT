@@ -1,0 +1,137 @@
+.roadmap {
+    padding-bottom: 150px;
+    padding-top: 145px;
+    margin-top: -145px;
+    &__wrapper {
+        margin-top: 70px;
+    }
+    &__blocks {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    &__block {
+        max-width: 570px;
+        min-height: 254px;
+        background: $gradient-two;
+        border-radius: 14px;
+        padding: 34px 80px;
+        li:last-child {
+            margin-top: 40px;
+        }
+        &_mt {
+            margin-top: 80px;
+        }
+    }
+    &__list {
+        position: relative;
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        padding-left: 73px;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 48px;
+            height: 43px;
+            padding-top: 5px;
+            text-align: center;
+            background: $gradient-footer;
+            border-radius: 14px;
+            font-family: 'Exo', sans-serif;
+            font-weight: 700;
+            font-size: 22px;
+        }
+        &_1 {
+            &::before {
+                content: '1';
+            }
+        }
+        &_2 {
+            &::before {
+                content: '2';
+            }
+        }
+        &_3 {
+            &::before {
+                content: '3';
+            }
+        }
+        &_4 {
+            &::before {
+                content: '4';
+            }
+        }
+        &_5 {
+            &::before {
+                content: '5';
+            }
+        }
+        &_6 {
+            &::before {
+                content: '6';
+            }
+        }
+        &_7 {
+            &::before {
+                content: '7';
+            }
+        }
+        &_8 {
+            &::before {
+                content: '8';
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .roadmap {
+        &__block_mt {
+            margin-left: 15px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .roadmap {
+        padding-bottom: 32px;
+        &__wrapper {
+            margin-top: 40px;
+        }
+        &__block {
+            &_mt {
+                margin-left: 0px;
+                margin-top: 28px;
+                margin-bottom: 28px;
+            }
+        }     
+        &__blocks {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .roadmap {
+        &__list {
+            font-weight: 400;
+            font-size: 16px;
+            &:before {
+                font-size: 12px;
+            }
+        }
+        &__block {
+            padding: 45px 20px;
+            min-height: 213px;
+            li:last-child {
+                margin-top: 30px;
+            }
+        }
+    }
+}

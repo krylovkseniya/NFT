@@ -1,0 +1,122 @@
+.footer {
+    padding: 62px 0 45px 0;
+    background: url('../../img/footer-bg.png') center/100% 100% no-repeat ;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__logo {
+        width: 83px;
+        height: 87px;
+    }
+    &__list {
+        display: flex;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 0 50px;
+        li:not(:last-child) {
+            margin-right: 50px;
+        }
+    }
+    &__link {
+        padding-bottom: 5px;
+        &:hover { 
+            color: $violet;
+        }
+        &:active {
+            color: $violet;
+            border-bottom: 2px solid;
+            border-image: $gradient 1;
+        }
+    }
+    &__social {
+        display: flex;
+        justify-content: space-between;
+        min-width: 120px;
+        &-link {
+            display: block;
+            width: 52px;
+            height: 52px;
+            background: $gradient-footer;
+            border-radius: 14px;
+            text-align: center;
+            padding: 5px;
+        }
+    }
+    &__dis {
+        width: 31px;
+        height: 23px;
+        vertical-align: middle;
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+    &__twit {
+        width: 37px;
+        height: 30px;
+        vertical-align: middle;
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding: 47px 0 70px 0;
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__logo {
+            width: 59px;
+            height: 60px;
+        }
+        &__list {
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .footer {
+        &__social {
+            min-width: 83px;
+        }
+        &__social-link {
+            width: 37px;
+            height: 37px;
+        }
+        &__list {
+            padding: 0 20px;
+            li:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+        &__link {
+            font-size: 14px;
+        }
+        &__dis {
+            width: 21px;
+            height: 21px;
+            vertical-align: top;
+            padding-top: 5px;
+        }
+        &__twit {
+            width: 26px;
+            height: 26px;
+            vertical-align: top;
+            padding-top: 5px;
+        }
+    }
+}
+
+
+
+// X-Small	None	<576px
+// Small	sm	≥576px
+// Medium	md	≥768px
+// Large	lg	≥992px
+// Extra large	xl	≥1200px
+// Extra extra large	xxl	≥1400px

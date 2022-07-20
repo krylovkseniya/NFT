@@ -1,0 +1,62 @@
+@import '../../../node_modules/swiper/swiper.scss';
+
+.swiper {
+    margin-top: 52px;
+    position: relative;
+}
+
+.swiper-slide {
+    height: 480px;
+    img {
+        object-fit: cover;
+        border-radius: 40px;
+    }
+}
+
+.swiper-button-prev {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 2;
+    width: 20px;
+    height: 5px;
+    background-color: $violet;
+    transform: rotate(50deg);
+    cursor: pointer;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 5px;
+        background-color: $violet;
+        transform: translate(-10px, -8px) rotate(-90deg);
+    }
+}
+
+.swiper-button-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 2;
+    width: 20px;
+    height: 5px;
+    background-color: $violet;
+    transform: rotate(-50deg);
+    cursor: pointer;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 15px;
+        height: 5px;
+        background-color: $violet;
+        transform: translate(10px, -10px) rotate(90deg);
+    }
+}
+
+.swiper-button-disabled {
+    cursor: auto;
+}
